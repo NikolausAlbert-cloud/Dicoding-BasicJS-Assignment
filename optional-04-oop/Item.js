@@ -29,10 +29,6 @@ class Item{
   displayDetails({id, name, quantity, price}) {
     return `ID: ${id}, Name: ${name}, Quantity: ${quantity}, Price: ${price}`;
   }
-
-  show(){
-    return `ID: ${this.id}, Name: ${this.name}, Quantity: ${this.quantity}, Price: ${this.price}`
-  }
 }
 
 // Jangan hapus kode di bawah ini!

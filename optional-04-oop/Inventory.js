@@ -10,8 +10,8 @@ import Item from './Item.js';
 
 
 class Inventory extends Item {
-  constructor(id, name, quantity, price) {
-    super(id, name, quantity, price);
+  constructor() {
+    super();
     this.items = [];
   }
 
