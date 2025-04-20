@@ -21,13 +21,10 @@ class Item{
     this.name = name;
     this.quantity = quantity;
     this.price = price;
-   
-
-    
   }
 
-  displayDetails({id, name, quantity, price}) {
-    return `ID: ${id}, Name: ${name}, Quantity: ${quantity}, Price: ${price}`;
+  displayDetails() {
+    return `ID: ${this.id}, Name: ${this.name}, Quantity: ${this.quantity}, Price: ${this.price}`;
   }
 }
 

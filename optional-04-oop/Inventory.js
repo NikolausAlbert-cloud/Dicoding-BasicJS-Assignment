@@ -16,7 +16,7 @@ class Inventory extends Item {
   }
 
   addItem(item) {
-    this.items.push({id: item.id , name: item.name, quantity: item.quantity, price: item.price});
+    this.items.push(item);
   }
 
 
@@ -31,7 +31,7 @@ class Inventory extends Item {
 
     let output = "";
     this.items.forEach(item => {
-      output += this.displayDetails(item) + "\n";
+      output += item.displayDetails() + "\n";
     });
     return output;
   }

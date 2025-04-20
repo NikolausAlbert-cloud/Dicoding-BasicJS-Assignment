@@ -6,6 +6,7 @@ const inventory = new Inventory();
 const item1 = new Item(1, 'Laptop', 10, 1000);
 const item2 = new Item(2, 'Mouse', 50, 20);
 
+
 inventory.addItem(item1);
 inventory.addItem(item2);
 
