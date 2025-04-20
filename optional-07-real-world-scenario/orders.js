@@ -17,10 +17,8 @@ function addOrder(customerName, items) {
     customerName,
     items,
     totalPrice,
-    status: "Mennunggu"
+    status: "Menunggu"
   })
-
-  return orders;
 }
 
 // TODO: selesaikan fungsi updateOrderStatus
@@ -28,8 +26,6 @@ function updateOrderStatus(orderId, status) {
   const indexItem = orders.findIndex(order => order.id === orderId);
   
   indexItem !== -1 ? orders[indexItem].status = status : null;
-
-  return;
 }
 
 // TODO: selesaikan fungsi calculateTotalRevenue dari order yang berstatus Selesai
@@ -45,7 +41,6 @@ function calculateTotalRevenue() {
 function deleteOrder(id) {
   orders = orders.filter(order => order.id !== id);
 
-  return orders;
 }
 
 export { orders, addOrder, updateOrderStatus, calculateTotalRevenue, deleteOrder };
